@@ -1,0 +1,52 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: monospace;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+#terminal {
+    width: 90%;
+    height: 80%;
+    padding: 10px;
+    margin-bottom: 6rem;
+    margin-right: 3rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+#output {
+    white-space: pre-wrap;
+    overflow-y: scroll;
+    height: calc(100% - 30px);
+    margin-bottom: 10px;
+}
+
+#output div {
+    margin-bottom: 1.1rem;
+    /* Memberikan jarak 10px di bawah setiap div */
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+#input {
+    animation: blink 1s step-end infinite;
+    outline: none;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
